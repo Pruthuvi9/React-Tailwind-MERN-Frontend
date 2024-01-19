@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .btn {
+    background-color: theme('colors.pink');
+    color: white;
+  }
+
+  .nav-link {
+    background-color: theme('colors.blue');
+    color: white;
+  }
+
+  .nav-link.danger {
+    background-color: red;
+  }
+}

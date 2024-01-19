@@ -9,16 +9,20 @@ import {
 import Users from './user/pages/Users';
 import './App.css';
 import UserPlaces from './places/pages/UserPlaces';
+import MainNavigation from './shared/navigation/MainNavigation';
 
 function App() {
 	const userId = useParams();
 
 	return (
 		<Router>
-			<Routes>
-				<Route path="/" element={<Users />}></Route>
-				<Route path="/:userId/places" element={<UserPlaces />} />
-			</Routes>
+			<MainNavigation />
+			<main>
+				<Routes>
+					<Route path='/' element={<Users />}></Route>
+					<Route path='/:userId/places' element={<UserPlaces />} />
+				</Routes>
+			</main>
 		</Router>
 	);
 }
