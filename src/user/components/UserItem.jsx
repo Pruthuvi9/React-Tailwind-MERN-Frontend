@@ -4,7 +4,7 @@ const UserItem = (props) => {
 	return (
 		<li
 			key={props.id}
-			className="flex justify-left w-fit max-w-sm pl-4 pr-6 py-4 bg-yellow-200 hover:bg-yellow-300 hover:cursor-pointer rounded-lg"
+			className="flex justify-left w-fit max-w-sm pl-4 pr-6 py-4 bg-blue hover:bg-green hover:cursor-pointer rounded-lg"
 		>
 			<Link to={`/${props.id}/places`}>
 				<div className="flex min-w-0 gap-x-4">

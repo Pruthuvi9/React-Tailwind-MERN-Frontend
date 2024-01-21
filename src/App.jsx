@@ -10,13 +10,15 @@ import Users from './user/pages/Users';
 import './App.css';
 import UserPlaces from './places/pages/UserPlaces';
 import MainNavigation from './shared/navigation/MainNavigation';
+import SideDrawer from './shared/navigation/SideDrawer';
 
 function App() {
 	const userId = useParams();
 
 	return (
 		<Router>
-			<MainNavigation />
+			<MainNavigation className='hidden invisible md:block md:visible' />
+			<SideDrawer className='block visible md:hidden md:invisible' />
 			<main>
 				<Routes>
 					<Route path='/' element={<Users />}></Route>

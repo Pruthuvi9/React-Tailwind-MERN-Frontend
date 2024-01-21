@@ -1,9 +1,9 @@
 import NavLinks from './NavLinks';
 
-const MainNavigation = () => {
+const MainNavigation = (props) => {
 	return (
-		<header>
-			<NavLinks />
+		<header className={props.className}>
+			<NavLinks classNames='nav-link' />
 		</header>
 	);
 };
