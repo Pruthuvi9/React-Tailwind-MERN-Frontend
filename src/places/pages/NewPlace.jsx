@@ -1,12 +1,14 @@
+import Input from '../../shared/formElements/Input';
+import Button from '../../shared/ui/Button';
+
 const NewPlace = (props) => {
-	return (
-		<form>
-			<div>
-				<input type='input' id='name' name='Name' />
-				<label for='name' />
-			</div>
-		</form>
-	);
+  return (
+    <form>
+      <Input element='input' id='name' htmlFor='name' label='Name' />
+      <Input id='description' htmlFor='description' label='Description' />
+      <Button type='submit' label='Submit' />
+    </form>
+  );
 };
 
 export default NewPlace;
